@@ -3,7 +3,6 @@ import Form from './pages/form'
 import Todo from './pages/todo'
 import {Switch, Route, Link} from 'react-router-dom'
 import Logo from './assets/logo-todo.png'
-import EditPage from './pages/edit';
 
 function App() {
 
@@ -13,7 +12,7 @@ function App() {
                 <div className='flex justify-center'>
                     <div className='flex py-5 items-center gap-5'>
                         <Link to='/'>
-                            <img src={Logo}/>
+                            <img src={Logo} alt='Logo'/>
                         </Link>
                         <p className='text-white text-xl'>Aplicación para la gestión de proyectos</p>
                     </div>
@@ -22,9 +21,6 @@ function App() {
                 <Switch>
                     <Route path='/form'>
                         <Form/>
-                    </Route>
-                    <Route path='/edit'>
-                        <EditPage/>
                     </Route>
                     <Route path='/'>
                         <Todo/>

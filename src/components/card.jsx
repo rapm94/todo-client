@@ -20,18 +20,18 @@ function Card({todo, deleteTodo, updateTodo}) {
                 <p className="font-normal text-gray-700 mb-3">{todo.description}</p>
                 <div className='flex gap-x-32'>
                     <div className='flex gap-x-6'>
-                        <a
+                        <button
                             onClick={() => deleteTodo(todo._id)}
                             className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
                             Delete
-                        </a>
+                        </button>
                       
                     </div>
-                    <a
+                    <button
                          onClick={() => updateTodo( todo)}
                         className="text-white bg-taskgreen hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
                         Done
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
